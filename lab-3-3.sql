@@ -15,4 +15,13 @@
 -- | 2019 | Houston Astros                | 107       |
 -- | 2004 | St. Louis Cardinals           | 105       |
 
+SELECT year, MAX(wins)
+FROM teams
+WHERE year > 1959
+GROUP BY year
+ORDER BY MAX(wins) DESC;
+-- want aggregate around wins --> winningest
+-- need to group by each season aka year so group by year
 
+--*** easy to be accidentally right --> gotta get rid of name because it is not an aggregate function or group by
+-- it can fuck up the data --> accidentally accurate
