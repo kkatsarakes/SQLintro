@@ -3,5 +3,4 @@
 
 .mode columns
 -- run `.help .mode` to view other options
-
 .headers on
